@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Mar  6 14:29:37 2019
+# Process ID: 49704
+# Current directory: C:/Users/wipe1801/cpuyesklar/cpuyesklar.runs/impl_1
+# Command line: vivado.exe -log cpu_top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cpu_top_module.tcl -notrace
+# Log file: C:/Users/wipe1801/cpuyesklar/cpuyesklar.runs/impl_1/cpu_top_module.vdi
+# Journal file: C:/Users/wipe1801/cpuyesklar/cpuyesklar.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source cpu_top_module.tcl -notrace

@@ -1,0 +1,329 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Mar  6 15:30:51 2019
+# Process ID: 51644
+# Current directory: C:/Users/wipe1801/cpuyesklar/cpuyesklar.runs/synth_1
+# Command line: vivado.exe -log cpu_top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_top_module.tcl
+# Log file: C:/Users/wipe1801/cpuyesklar/cpuyesklar.runs/synth_1/cpu_top_module.vds
+# Journal file: C:/Users/wipe1801/cpuyesklar/cpuyesklar.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cpu_top_module.tcl -notrace
+Command: synth_design -top cpu_top_module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8092 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 353.969 ; gain = 88.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cpu_top_module' [C:/Users/wipe1801/Downloads/Task3.vhd:24]
+INFO: [Synth 8-3491] module 'segmentdriver' declared at 'C:/Users/wipe1801/Documents/Task_0/segmentdriver.vhd:33' bound to instance 'U0' of component 'segmentdriver' [C:/Users/wipe1801/Downloads/Task3.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'segmentdriver' [C:/Users/wipe1801/Documents/Task_0/segmentdriver.vhd:52]
+INFO: [Synth 8-3491] module 'segmentdecoder' declared at 'C:/Users/wipe1801/Documents/Task_0/segmentdecoder.vhd:32' bound to instance 'uut' of component 'segmentDecoder' [C:/Users/wipe1801/Documents/Task_0/segmentdriver.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'segmentdecoder' [C:/Users/wipe1801/Documents/Task_0/segmentdecoder.vhd:43]
+INFO: [Synth 8-226] default block is never used [C:/Users/wipe1801/Documents/Task_0/segmentdecoder.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element Decode_Data_reg was removed.  [C:/Users/wipe1801/Documents/Task_0/segmentdecoder.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'segmentdecoder' (1#1) [C:/Users/wipe1801/Documents/Task_0/segmentdecoder.vhd:43]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/wipe1801/Documents/Task_0/clock_divider.vhd:33' bound to instance 'uut1' of component 'clock_divider' [C:/Users/wipe1801/Documents/Task_0/segmentdriver.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/wipe1801/Documents/Task_0/clock_divider.vhd:40]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/wipe1801/Documents/Task_0/clock_divider.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (2#1) [C:/Users/wipe1801/Documents/Task_0/clock_divider.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'segmentdriver' (3#1) [C:/Users/wipe1801/Documents/Task_0/segmentdriver.vhd:52]
+INFO: [Synth 8-3491] module 'add4' declared at 'C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/add4.vhd:7' bound to instance 'U1' of component 'add4' [C:/Users/wipe1801/Downloads/Task3.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'add4' [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/add4.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'add4' (4#1) [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/add4.vhd:13]
+INFO: [Synth 8-3491] module 'mul4' declared at 'C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/mul4.vhd:34' bound to instance 'U2' of component 'mul4' [C:/Users/wipe1801/Downloads/Task3.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'mul4' [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/mul4.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'mul4' (5#1) [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/mul4.vhd:40]
+INFO: [Synth 8-3491] module 'invrt4' declared at 'C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/invert4.vhd:5' bound to instance 'U3' of component 'invrt4' [C:/Users/wipe1801/Downloads/Task3.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'invrt4' [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/invert4.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'invrt4' (6#1) [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/invert4.vhd:12]
+INFO: [Synth 8-3491] module 'bit_and4' declared at 'C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/and4.vhd:33' bound to instance 'U4' of component 'bit_and4' [C:/Users/wipe1801/Downloads/Task3.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'bit_and4' [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/and4.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'bit_and4' (7#1) [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/and4.vhd:38]
+INFO: [Synth 8-3491] module 'bit_or4' declared at 'C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/4or.vhd:35' bound to instance 'U5' of component 'bit_or4' [C:/Users/wipe1801/Downloads/Task3.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'bit_or4' [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/4or.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'bit_or4' (8#1) [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/4or.vhd:40]
+INFO: [Synth 8-3491] module 'cpu' declared at 'C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/cpu4.vhd:5' bound to instance 'U6' of component 'cpu' [C:/Users/wipe1801/Downloads/Task3.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'cpu' [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/cpu4.vhd:26]
+INFO: [Synth 8-226] default block is never used [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/cpu4.vhd:40]
+WARNING: [Synth 8-614] signal 'execute' is read in the process but is not in the sensitivity list [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/cpu4.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'cpu' (9#1) [C:/Users/wipe1801/cpuyesklar/cpuyesklar.srcs/sources_1/new/cpu4.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'cpu_top_module' (10#1) [C:/Users/wipe1801/Downloads/Task3.vhd:24]
+WARNING: [Synth 8-3331] design cpu has unconnected port update
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 403.953 ; gain = 138.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 403.953 ; gain = 138.305
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/wipe1801/Documents/Task_0/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/wipe1801/Documents/Task_0/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/wipe1801/Documents/Task_0/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpu_top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cpu_top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 712.230 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 712.230 ; gain = 446.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 712.230 ; gain = 446.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 712.230 ; gain = 446.582
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/wipe1801/Documents/Task_0/clock_divider.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 712.230 ; gain = 446.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module segmentdriver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module add4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+Module cpu 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 5     
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 3     
+	  16 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element U0/uut1/count_reg was removed.  [C:/Users/wipe1801/Documents/Task_0/clock_divider.vhd:48]
+WARNING: [Synth 8-3331] design cpu_top_module has unconnected port btnc
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 712.230 ; gain = 446.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 718.121 ; gain = 452.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 718.270 ; gain = 452.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 738.988 ; gain = 473.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.988 ; gain = 473.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.988 ; gain = 473.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.988 ; gain = 473.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.988 ; gain = 473.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.988 ; gain = 473.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.988 ; gain = 473.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     6|
+|3     |LUT1   |    17|
+|4     |LUT2   |    13|
+|5     |LUT3   |     4|
+|6     |LUT4   |    19|
+|7     |LUT5   |     7|
+|8     |LUT6   |    30|
+|9     |FDRE   |    46|
+|10    |IBUF   |    10|
+|11    |OBUF   |    11|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |   164|
+|2     |  U0     |segmentdriver |    59|
+|3     |    uut1 |clock_divider |    36|
+|4     |  U2     |mul4          |     2|
+|5     |  U6     |cpu           |    81|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.988 ; gain = 473.340
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 738.988 ; gain = 165.063
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 738.988 ; gain = 473.340
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+42 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 738.988 ; gain = 476.668
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wipe1801/cpuyesklar/cpuyesklar.runs/synth_1/cpu_top_module.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 738.988 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  6 15:31:24 2019...
